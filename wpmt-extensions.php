@@ -29,6 +29,33 @@ define( 'wpmt_extensions', wpmt_option_plugin_dir . "extensions/");
 // WPMT Installing Framework
 if ( ! class_exists( 'WPMT_Extensions_Instances' ) ) :
     include_once( wpmt_core . 'classes/install.php' );
-else:
-
 endif;
+
+add_action( 'init', 'github_plugin_updater_test_init' );
+function github_plugin_updater_test_init() {
+
+	include_once wpmt_option_plugin_dir . 'WPMTFramework/classes/updater.php';
+
+	define( 'WP_GITHUB_FORCE_UPDATE', true );
+
+	if ( is_admin() ) { // note the use of is_admin() to double check that this is happening in the admin
+
+		$config = array(
+			'slug' => plugin_basename( __FILE__ ),
+			'proper_folder_name' => 'wpmt-extensions',
+			'api_url' => 'https://api.github.com/repos/wpmusab/wpmt-extensions',
+			'raw_url' => 'https://raw.github.com/wpmusab/wpmt-extensions/master',
+			'github_url' => 'https://github.com/wpmusab/wpmt-extensions',
+			'zip_url' => 'https://github.com/wpmusab/wpmt-extensions/archive/master.zip',
+			'sslverify' => true,
+			'requires' => '3.0',
+			'tested' => '3.3',
+			'readme' => 'readme.txt',
+			'access_token' => '',
+		);
+
+		new WP_GitHub_Updater( $config );
+
+	}
+
+}
