@@ -28,13 +28,13 @@ define( 'wpmt_extensions', wpmt_option_plugin_dir . "extensions/");
 
 // WPMT Installing Framework
 if ( ! class_exists( 'WPMT_Extensions_Instances' ) ) :
-    include_once( wpmt_core . 'classes/install.php' );
+    //include_once( wpmt_core . 'classes/install.php' );
 endif;
 
 add_action( 'init', 'github_plugin_updater_test_init' );
 function github_plugin_updater_test_init() {
 
-	include_once wpmt_option_plugin_dir . 'WPMTFramework/classes/updater.php';
+	include_once wpmt_option_plugin_dir . 'WPMTFramework/classes/wpmt-extensions-update.php';
 
 	define( 'WP_GITHUB_FORCE_UPDATE', true );
 
