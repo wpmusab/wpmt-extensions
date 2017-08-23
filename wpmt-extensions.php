@@ -3,7 +3,7 @@
 Plugin Name: WPMT Extensions
 Plugin URI: https://wordpress.org/plugins/wpmt-extensions/
 Description: This Plugin Provide You information about your system status and also is extandable by developer as tool for create admin panel for there theme or plugin.
-Version: 0.6
+Version: 0.7
 Author: WPMT
 Author URI: http://wpmt.com/plugins/wpmt-extensions
 Text Domain: wpmt
@@ -14,7 +14,7 @@ if (!defined('ABSPATH'))
     exit;
 
 // WPMT About Plugin
-define( 'wpmt_extensions_version', '0.6' );
+define( 'wpmt_extensions_version', '0.7' );
 define( 'wpmt_text_domain', 'wpmt' );
 
 // WPMT Assets Url
