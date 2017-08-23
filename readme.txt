@@ -6,7 +6,7 @@ Requires at least: 3.0
 Tested up to: 3.4
 Stable tag: 0.5
 
-~Current Version: 0.5~
+~Current Version:0.5~
 
 NOTE: 
 
