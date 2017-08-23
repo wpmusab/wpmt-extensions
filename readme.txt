@@ -10,7 +10,7 @@ Stable tag: 0.6
 
 NOTE: 
 
-== Description ==
+=== Description ===
 
 This plugin will provide you many functions in your theme and many tools
 
