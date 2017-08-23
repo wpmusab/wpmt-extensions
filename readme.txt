@@ -4,9 +4,9 @@ Contributors: WPMT
 Tags: extensions, woocommerce, portfolio, masonry, infinitescroll, system status, internet speed test
 Requires at least: 3.0
 Tested up to: 4.8.1
-Stable tag: 0.9
+Stable tag: 1.0
 
-~Current Version:0.9~
+~Current Version:1.0~
 
 NOTE: 
 
